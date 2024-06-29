@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(47, 88%, 63%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    width:250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.img-container img{
+ display: block;
+ width: 100%;
+ border-radius: 0.3rem;
+}
+
+.highlighted-text {
+    background-color: hsl(47, 88%, 63%);  
+    margin: 10px 0;
+    text-align: left;
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    font-weight: 700;
+    border-radius: 0.2rem;
+}
+
+.date {
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.abt {
+    font-size: 14px;
+    margin-top: 12px;
+    color: hsl(0, 0%, 50%);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 15px;
+}
+
+.profile img {
+    display: block;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid hsl(47, 88%, 63%);
+}
+
+.profile p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+footer, 
+footer a {
+    color: hsl(0, 62%, 14%);
+}

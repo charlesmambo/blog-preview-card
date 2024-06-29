@@ -9,30 +9,57 @@
 
 body, html {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     background-color: hsl(47, 88%, 63%);
 }
 
-main {
+/* global css styles */
+body, html,
+main,
+.card,
+.profile {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.abt,
+.profile p {
+    font-size: 14px;
+    font-size: 14px;
+}
+
+.profile p,
+.highlighted-text {
+    font-weight: 700;
+}
+
+main {
     height: 100%;
 }
 
 .card {
     width:250px;
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
     background-color: hsl(0, 0%, 100%);
     padding: 0.8rem;
     border-radius: 0.3rem;
+    box-shadow: rgba(110, 83, 99, 0.574) 0px 5px,  hsl(82, 87%, 56%) 0px 10px, hsl(332, 97%, 42%) 0px 15px, rgba(14, 59, 10, 0.629) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-bottom-right-radius: 30px;
+    border-right: 5px solid hsl(82, 74%, 34%);
+    border-top-right-radius: 30px;
 }
+
+.card:hover {
+    transform: rotateY(180deg);
+    background-color: #1a0d1e;
+    color: hsl(62, 95%, 43%);
+    border-bottom-left-radius: 30px;
+    border-left: 5px solid hsl(82, 74%, 34%);
+    border-top-left-radius: 30px;
+  }
 
 .img-container img{
  display: block;
@@ -46,7 +73,6 @@ main {
     text-align: left;
     width: fit-content;
     padding: 0.2rem 1rem;
-    font-weight: 700;
     border-radius: 0.2rem;
 }
 
@@ -56,16 +82,15 @@ main {
 }
 
 .abt {
-    font-size: 14px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
     margin-top: 12px;
-    color: hsl(0, 0%, 50%);
 }
 
+
 .profile {
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
     margin-top: 15px;
+    justify-content: left;
 }
 
 .profile img {
@@ -75,9 +100,8 @@ main {
     border: 1px solid hsl(47, 88%, 63%);
 }
 
-.profile p {
-    font-weight: 700;
-    font-size: 14px;
+footer {
+padding: 10px 20px;
 }
 
 footer, 
